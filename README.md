@@ -30,13 +30,13 @@ Install the required the packages inside the virtual environment:
 $ conda create -n yourenvname python=3.7 anaconda
 $ source activate yourenvname
 $ conda install cudatoolkit==10.0.130
-$ pip install -r requirements.txt
+$ python -m pip install -r requirements.txt
 ```
 ### Installation for envs 
 #### Cartpole
 ```
 cd libs/gym-cartpole-world-master
-pip install -e .
+python -m pip install -e .
 ```
 Take gravity of 9.8 as an example.
 ```
@@ -53,7 +53,7 @@ python data/data_gen_cartpoleworld.py 'v00'
 Install ```gym_pong```.
   ```
   cd libs/gym_pong-master
-  pip install -e .
+  python -m pip install -e .
   ```
 
 Follow [this](https://github.com/openai/atari-py#roms) instruction to import ROMs
